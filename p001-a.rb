@@ -1,3 +1,5 @@
+# Time complexity: O(1). It is much much less than the trivial way,
+# especially when n is big.
 n = 1000
 
 def sum_1_to_n(n)

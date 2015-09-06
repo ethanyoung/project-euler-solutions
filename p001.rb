@@ -1,3 +1,5 @@
+# Trivial way to solve p001.
+# Time complexity O(n).
 n = 1000
 
 sum = 0
