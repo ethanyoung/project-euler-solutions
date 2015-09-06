@@ -1,19 +1,13 @@
 max = 4 * 10 ** 6
-n = 100
 
-def fib(n)
-  if n == 1 or n == 0
-    return n
-  else
-    fib(n - 1) + fib(n - 2)
-  end
-end
-
+a = 1
+b = 1
 sum = 0
-(1 .. n).each do |i|
-  fib = fib i
-  break if fib > max
-  sum += fib if fib.even?
+while sum < max
+  c = a + b
+  sum += c if c.even?
+  a = b
+  b = c
 end
 
 p sum
