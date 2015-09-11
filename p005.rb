@@ -9,7 +9,7 @@ end
 
 i = n
 until all_devided?(i, n) do
-  i += n
+  i += n # Increase the performance dramatically.
 end
 
 p i
