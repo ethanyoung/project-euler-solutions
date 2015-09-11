@@ -6,7 +6,7 @@ largest_prime_factor = -1
 (2 .. n).each do |i|
   if n % i == 0 && i.prime?
     largest_prime_factor = i
-    n /= i
+    n /= i # Dividing the factor reduces the number dramatically.
     break if n == 1
   end
 end
